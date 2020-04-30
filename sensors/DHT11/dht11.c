@@ -88,6 +88,7 @@ uint16_t read_dht11 (void)
 	* @retval NO_CONN: signal level did not change for the number of cycles MAX_CNT_ND
   *					READ_OK: reading passed normally.
   */
+static
 uint8_t wait_for_reading (uint8_t state)
 {
 	while (HAL_GPIO_ReadPin(GPIO_PORT_DHT, GPIO_PIN_DHT) != state)
