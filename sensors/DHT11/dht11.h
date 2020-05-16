@@ -28,4 +28,3 @@ struct dht11_t {
 };
 
 uint16_t read_dht11(void);
-uint8_t wait_for_reading (uint8_t state);
